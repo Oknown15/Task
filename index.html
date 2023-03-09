@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <fieldset>
+        <legend>SIGN UP</legend>
+        <form name="myForm" method="post" id="form" onsubmit="return false;">
+            <label for="Name">Name :</label>
+            <input class="main" type="text" id="Name"  placeholder="Name" required>
+            <br>
+            <label for="Email">Email :</label>
+            <input type="email" placeholder="Email" id="Email" required>
+            <br>
+            <label for="Number">Number :</label>
+            <input type="tel" id="Number" name="fname" placeholder="Phone Number" required>
+            <br>
+            <label for="sex">Male</label>
+            <input type="radio" id="sex" required>
+            <label for="Female">Female</label>
+           <input type="radio" id="Female" required>
+           <br>
+           <label for="Password">Password :</label>
+           <input type="password" id="Password" placeholder="Password" required>
+           <br>
+           <button onclick="welcome()">Submit</button>
+        </form>
+    </fieldset>
+    <script>
+       function welcome() {
+            alert("You have Sucessfully Submitted Your Form")
+        };
+    </script>
+</body>
+</html>
